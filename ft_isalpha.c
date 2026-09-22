@@ -6,8 +6,13 @@
 /*   By: admoujta <admoujta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 23:38:14 by admoujta          #+#    #+#             */
-/*   Updated: 2026/09/19 18:22:57 by admoujta         ###   ########.fr       */
+/*   Updated: 2026/09/22 00:44:16 by admoujta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-include <>
+#include "libft.h"
+
+int	isalpha(char c)
+{
+	
+}
