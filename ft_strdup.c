@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: admoujta <admoujta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/15 23:38:14 by admoujta          #+#    #+#             */
-/*   Updated: 2026/10/01 20:30:23 by admoujta         ###   ########.fr       */
+/*   Created: 2026/10/01 22:39:04 by admoujta          #+#    #+#             */
+/*   Updated: 2026/10/01 23:05:32 by admoujta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+char	*ft_strdup(char const *str)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	char	*ptr;
+	size_t	i;
+
+	i = 0;
+	ptr = malloc ((ft_strlen(str) + 1) * sizeof(char));
+	if (ptr == 0)
+		return (0);
+	while (str[i])
+	{
+		ptr[i] = str[i];
+		i++;
+	}
+	ptr[i] = '\0';
+	return (ptr);
 }
