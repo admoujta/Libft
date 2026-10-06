@@ -6,7 +6,7 @@
 /*   By: admoujta <admoujta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 23:06:28 by admoujta          #+#    #+#             */
-/*   Updated: 2026/10/01 23:41:02 by admoujta         ###   ########.fr       */
+/*   Updated: 2026/10/06 21:20:37 by admoujta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ void	*ft_calloc(size_t	count, size_t	size)
 	size_t	i;
 
 	i = 0;
-	if(size != 0 && count > SIZE_MAX / size)
+	if (size != 0 && count > SIZE_MAX / size)
 		return (0);
 	ptr = (void *)malloc(size * count);
-	if(ptr == 0)
+	if (ptr == 0)
 		return (0);
 	while (i < count * size)
 	{

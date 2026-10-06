@@ -1,26 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: admoujta <admoujta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/05 16:25:14 by admoujta          #+#    #+#             */
-/*   Updated: 2026/10/06 21:26:53 by admoujta         ###   ########.fr       */
+/*   Created: 2026/10/06 21:34:12 by admoujta          #+#    #+#             */
+/*   Updated: 2026/10/06 22:06:32 by admoujta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strnstr(const char *str, const char *to_find, size_t n)
 {
 	size_t	i;
+	size_t	j;
 
 	i = 0;
-	if (n == 0)
-		return (0);
-	while ((unsigned char)s1[i] == (unsigned char)s2[i]
-		&& s1[i] && i < n - 1 && s2[i])
+	j = 0;
+	if (*to_find == 0)
+		return ((char *)str);
+	while (str[i] && i < n)
+	{
+		j = 0;
+		while (str[i + j] == to_find[j] && to_find[j] && i + j < n)
+			j++;
+		if (to_find[j] == '\0')
+			return ((char *)&str[i]);
 		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	}
+	return (0);
 }
