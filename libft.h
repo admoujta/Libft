@@ -6,7 +6,7 @@
 /*   By: admoujta <admoujta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/19 18:20:22 by admoujta          #+#    #+#             */
-/*   Updated: 2026/10/06 23:49:02 by admoujta         ###   ########.fr       */
+/*   Updated: 2026/10/06 23:52:39 by admoujta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,5 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, char const *src, size_t size);
 
 void	*ft_calloc(size_t	count, size_t	size);
+
 #endif
