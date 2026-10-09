@@ -6,7 +6,7 @@
 /*   By: admoujta <admoujta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/19 18:20:22 by admoujta          #+#    #+#             */
-/*   Updated: 2026/10/09 01:09:19 by admoujta         ###   ########.fr       */
+/*   Updated: 2026/10/09 01:30:46 by admoujta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, char const *src, size_t size);
 
 void	*ft_calloc(size_t	count, size_t	size);
-void	ft_bzero(void *s, size_t n);
+
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t n);
+void	ft_putchar_fd(char c, int fd);
+void	ft_bzero(void *s, size_t n);
 
 #endif
