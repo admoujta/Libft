@@ -6,7 +6,7 @@
 /*   By: admoujta <admoujta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/19 18:20:22 by admoujta          #+#    #+#             */
-/*   Updated: 2026/10/09 01:30:46 by admoujta         ###   ########.fr       */
+/*   Updated: 2026/10/10 00:13:24 by admoujta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ char	*ft_strrchr(const char *str, int c);
 char	*ft_strnstr(const char *str, const char *to_find, size_t n);
 char	*ft_strdup(const char *str);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);

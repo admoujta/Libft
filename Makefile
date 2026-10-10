@@ -29,6 +29,8 @@ SRC = 	ft_isalpha.c 	\
 		ft_memmove.c    \
 		ft_substr.c     \
 		ft_putchar_fd.c \
+		ft_strjoin.c    \
+		ft_strtrim.c
 
 
 OBJS = $(SRC:.c=.o)
