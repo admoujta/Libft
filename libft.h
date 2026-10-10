@@ -6,7 +6,7 @@
 /*   By: admoujta <admoujta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/19 18:20:22 by admoujta          #+#    #+#             */
-/*   Updated: 2026/10/10 00:13:24 by admoujta         ###   ########.fr       */
+/*   Updated: 2026/10/10 02:16:43 by admoujta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_bzero(void *s, size_t n);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
