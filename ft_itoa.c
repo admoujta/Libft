@@ -6,13 +6,13 @@
 /*   By: admoujta <admoujta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/10 03:25:17 by admoujta          #+#    #+#             */
-/*   Updated: 2026/10/10 20:39:43 by admoujta         ###   ########.fr       */
+/*   Updated: 2026/10/10 22:10:48 by admoujta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	word_len(int n)
+static size_t	word_len(int n)
 {
 	size_t	len;
 
