@@ -8,7 +8,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C-blue)
 ![School](https://img.shields.io/badge/School-42-black)
-![Status](https://img.shields.io/badge/Status-Part%202%20Completed-success)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 ![Norm](https://img.shields.io/badge/Norminette-42-blueviolet)
 
 </div>
@@ -17,9 +17,9 @@
 
 ## 📌 Description
 
-**Libft** is the first project of the **42 curriculum**.
+**Libft** is one of the first projects of the **42 curriculum**.
 
-The goal of this project is to build a personal C library by reimplementing several functions from the standard C library and creating additional useful utility functions.
+The goal is to build a personal C library by reimplementing several functions from the standard C library, creating additional utility functions, and working with linked lists.
 
 This project develops a strong understanding of:
 
@@ -28,6 +28,8 @@ This project develops a strong understanding of:
 - Strings and arrays
 - Dynamic memory allocation
 - File descriptors
+- Linked lists
+- Structures and function pointers
 - Static libraries
 - Makefiles
 - Error handling
@@ -48,12 +50,13 @@ It can be reused in future 42 projects.
 ```text
 Part 1   ████████████████████ 100%
 Part 2   ████████████████████ 100%
-Bonus    ░░░░░░░░░░░░░░░░░░░░ Not started
+Part 3   ████████████████████ 100%
 ```
 
-> ✅ Part 1 completed
-> ✅ Part 2 completed
-> ⏳ Bonus linked-list functions next
+> ✅ Part 1 completed  
+> ✅ Part 2 completed  
+> ✅ Part 3 — Linked Lists completed  
+> 🎉 Libft completed
 
 ---
 
@@ -102,6 +105,30 @@ Bonus    ░░░░░░░░░░░░░░░░░░░░ Not starte
 | `ft_putstr_fd` | Writes a string to a file descriptor |
 | `ft_putendl_fd` | Writes a string followed by a newline |
 | `ft_putnbr_fd` | Writes an integer to a file descriptor |
+
+### Part 3 — Linked Lists
+
+Part 3 introduces linked lists using the following structure:
+
+```c
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+} t_list;
+```
+
+| Function | Description |
+|---|---|
+| `ft_lstnew` | Creates a new list node |
+| `ft_lstadd_front` | Adds a node at the beginning of the list |
+| `ft_lstsize` | Counts the number of nodes in a list |
+| `ft_lstlast` | Returns the last node of a list |
+| `ft_lstadd_back` | Adds a node at the end of the list |
+| `ft_lstdelone` | Deletes one node using a deletion function |
+| `ft_lstclear` | Deletes and frees an entire list |
+| `ft_lstiter` | Applies a function to every node |
+| `ft_lstmap` | Creates a new list by applying a function to each node |
 
 ---
 
@@ -197,7 +224,7 @@ Compilation uses the required flags:
 -Wall -Wextra -Werror
 ```
 
-Useful edge cases tested during development include:
+Important edge cases tested during development include:
 
 - Empty strings
 - Zero-length operations
@@ -206,6 +233,10 @@ Useful edge cases tested during development include:
 - `INT_MIN` and `INT_MAX`
 - Overlapping memory regions
 - Allocation failures and overflow-related cases where applicable
+- Empty linked lists
+- Single-node linked lists
+- Multi-node linked lists
+- Correct cleanup and memory handling
 
 To inspect the exported functions in the static library:
 
@@ -240,6 +271,20 @@ unsigned char *
 ### Strings
 
 Understanding how null-terminated strings work internally and how common libc functions manipulate them.
+
+### Linked Lists
+
+Understanding how linked data structures work in memory and how to:
+
+- Create nodes
+- Traverse a list
+- Add nodes at the front or back
+- Find the last node
+- Count nodes
+- Delete individual nodes
+- Clear an entire list safely
+- Apply functions to list contents
+- Build a new list from an existing one
 
 ### Compilation
 
@@ -282,10 +327,10 @@ man strchr
 man malloc
 ```
 
-FreeBSD manual pages:
+FreeBSD manual pages:  
 https://man.freebsd.org/
 
-GNU C Library documentation:
+GNU C Library documentation:  
 https://www.gnu.org/software/libc/manual/
 
 ---
@@ -300,6 +345,7 @@ AI was used to:
 - Clarify pointers and pointer arithmetic
 - Explain `void *` and `unsigned char *`
 - Explain memory-management concepts
+- Explain linked-list concepts
 - Interpret manual pages and function behavior
 - Identify important edge cases
 - Help understand compiler and linker errors
@@ -314,44 +360,20 @@ The project functions were implemented and understood by the author. AI was not 
 
 ---
 
-## 🎯 Next Step — Bonus
-
-The next stage is the Libft bonus, which introduces linked lists:
-
-```text
-ft_lstnew
-ft_lstadd_front
-ft_lstsize
-ft_lstlast
-ft_lstadd_back
-ft_lstdelone
-ft_lstclear
-ft_lstiter
-ft_lstmap
-```
-
-Using the following structure:
-
-```c
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-} t_list;
-```
-
----
-
 <div align="center">
 
 ## 👨‍💻 Author
 
-**admoujta**
+<img src="https://raw.githubusercontent.com/admoujta/admoujta/main/assets/profile.jpg" width="170" alt="admoujta profile photo" />
+
+### [admoujta](https://github.com/admoujta)
 
 42 Student
 
 ### ⭐ Libft — 42 Curriculum
 
-`C • Memory • Pointers • Strings • Makefile • Static Library`
+`C • Memory • Pointers • Strings • Linked Lists • Makefile • Static Library`
+
+**Project completed ✅**
 
 </div>
