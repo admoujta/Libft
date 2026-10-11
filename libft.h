@@ -6,7 +6,7 @@
 /*   By: admoujta <admoujta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/19 18:20:22 by admoujta          #+#    #+#             */
-/*   Updated: 2026/10/11 00:51:56 by admoujta         ###   ########.fr       */
+/*   Updated: 2026/10/11 11:42:04 by admoujta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 t_list	*ft_lstnew(void *content);
+unsigned int	ft_lstsize(t_list *lst);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 
 #endif
