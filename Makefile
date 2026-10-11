@@ -34,6 +34,8 @@ SRC = 	ft_isalpha.c 	  \
 		ft_putnbr_fd.c    \
 		ft_strmapi.c      \
 		ft_striteri.c     \
+		ft_strjoin.c      \
+		ft_strtrim.c	  \
 		ft_itoa.c		  \
 		ft_split.c		  \
 		ft_lstnew.c		  \

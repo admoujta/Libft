@@ -6,7 +6,7 @@
 /*   By: admoujta <admoujta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 14:15:47 by admoujta          #+#    #+#             */
-/*   Updated: 2026/10/06 21:23:41 by admoujta         ###   ########.fr       */
+/*   Updated: 2026/10/12 00:20:23 by admoujta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,16 @@ size_t	ft_strlcat(char *dst, char const *src, size_t size)
 	j = ft_strlen(dst);
 	len_dst = ft_strlen(dst);
 	len_src = ft_strlen(src);
-	if (size <= 0)
-		return (size + len_dst);
+	if (size <= len_dst)
+		return (size + len_src);
 	while (src[i] && j < size - 1)
 	{
 		dst[j] = src[i];
 		i++;
 		j++;
 	}
-	dst[i] = '\0';
-	if (size < len_dst)
+	dst[j] = '\0';
+	if (size == 0)
 		return (size + len_src);
 	return (len_dst + len_src);
 }
