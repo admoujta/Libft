@@ -51,8 +51,8 @@ Part 2   ████████████████████ 100%
 Bonus    ░░░░░░░░░░░░░░░░░░░░ Not started
 ```
 
-> ✅ Part 1 completed  
-> ✅ Part 2 completed  
+> ✅ Part 1 completed
+> ✅ Part 2 completed
 > ⏳ Bonus linked-list functions next
 
 ---
@@ -282,10 +282,10 @@ man strchr
 man malloc
 ```
 
-FreeBSD manual pages:  
+FreeBSD manual pages:
 https://man.freebsd.org/
 
-GNU C Library documentation:  
+GNU C Library documentation:
 https://www.gnu.org/software/libc/manual/
 
 ---
