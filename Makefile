@@ -36,7 +36,8 @@ SRC = 	ft_isalpha.c 	\
 		ft_striteri.c   \
 		ft_itoa.c		\
 		ft_split.c		\
-		ft_lstnew.c
+		ft_lstnew.c		\
+		ft_lstadd_front.c
 
 
 OBJS = $(SRC:.c=.o)
